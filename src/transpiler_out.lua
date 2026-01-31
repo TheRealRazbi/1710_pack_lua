@@ -1,1 +1,5 @@
-print("Hello world")
+function main()
+    print("Hello world")
+    print(peripheral.getNames())
+end
+main()
