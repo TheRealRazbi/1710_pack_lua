@@ -1,0 +1,6 @@
+how to create the dev setup
+run these commands
+
+openp/github get TheRealRazbi 1710_pack_lua main main.lua /main
+
+
