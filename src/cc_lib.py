@@ -31,6 +31,10 @@ class Peripheral:
     # is_present = _LuaApiFunc(lua_table="peripheral", lua_name="isPresent")
     # ...etc...
 
+    is_present = _LuaApiFunc(lua_table="peripheral", lua_name="isPresent")
+    get_methods = _LuaApiFunc(lua_table="peripheral", lua_name="getMethods")
+
+
 
 peripheral = Peripheral()
 # Transpiler hint: for any attribute on `peripheral` that is an instance
