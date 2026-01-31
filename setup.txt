@@ -1,6 +1,20 @@
 how to create the dev setup
 run these commands
 
+going to make the following commands in CC (computercraft) be available:
+pull, main
+
+--
+create a file called `pull` at the root, and put in there
 openp/github get TheRealRazbi 1710_pack_lua main main.lua /main
 
+
+shell.run("cd", "/")
+local ok = shell.run("openp/github", "get", "TheRealRazbi", "1710_pack_lua" "main" "main.lua" "/main.new")
+if ok then
+	shell.run("rm main")
+	shell.run("mv main.new main")
+else
+	print("Download failed, not updating main")
+end
 
