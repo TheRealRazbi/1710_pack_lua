@@ -1,8 +1,9 @@
 import ast
+from os import getenv
 from pathlib import Path
 
-SRC_FILE = Path("transpiler_in.py")
-OUT_FILE = Path("transpiler_out.lua")
+SRC_FILE = Path(getenv('in_file', "transpiler_in.py"))
+OUT_FILE = Path(getenv('out_file', "transpiler_out.lua"))
 
 
 def snake_to_camel(name: str) -> str:
