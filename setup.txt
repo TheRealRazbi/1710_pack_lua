@@ -1,20 +1,13 @@
-how to create the dev setup
-run these commands
+# Setup
+for the initial setup run the following command in CC
+```
+openp/github run TheRealRazbi 1710_pack_lua main setup.lua
+```
 
-going to make the following commands in CC (computercraft) be available:
-pull, main
+for updating the existing code, run "/pull" (which is created by setup.lua in the previous step)
 
---
-create a file called `pull` at the root, and put in there
-openp/github get TheRealRazbi 1710_pack_lua main main.lua /main
-
-
-shell.run("cd", "/")
-local ok = shell.run("openp/github", "get", "TheRealRazbi", "1710_pack_lua" "main" "main.lua" "/main.new")
-if ok then
-	shell.run("rm main")
-	shell.run("mv main.new main")
-else
-	print("Download failed, not updating main")
-end
-
+# Run
+run the command in the root of CC
+```
+main
+```

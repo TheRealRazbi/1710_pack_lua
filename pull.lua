@@ -1,3 +1,4 @@
+-- this script is meant to update main.lua
 shell.run("cd", "/")
 local ok = shell.run("openp/github", "get", "TheRealRazbi", "1710_pack_lua", "main", "main.lua", "/main.new")
 if ok then
